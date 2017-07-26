@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/assets/app.bundle.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        body {
+            padding-top: 50px;
+        }
+
+        .starter-template {
+            padding: 40px 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="starter-template">
+        <h1>Check Writer</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form class="well">
+                <div class="form-group">
+                    <label for="inputTo">To:</label>
+                    <input type="text" class="form-control" id="inputTo" placeholder="Uncle Sam">
+                </div>
+                <div class="form-group">
+                    <label for="inputTax">Tax Due:</label>
+                    <input type="number" class="form-control" id="inputTax" placeholder="100" min="0">
+                </div>
+                <div class="lead" style="text-align: center; height: 10px" id="tax"></div>
+            </form>
+        </div>
+    </div>
+
+</div><!-- /.container -->
+</body>
+</html>
