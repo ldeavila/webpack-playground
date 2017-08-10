@@ -2,10 +2,15 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "serve": "webpack-dev-server",
-    "test": "jest --watch"
+    "test": "jest --no-cache"
   },
   "jest": {
-    "collectCoverage": true
+    "collectCoverage": true,
+    "moduleFileExtensions": ["js", "json", "jsx", "node", "es6"],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest",
+      "^.+\\.es6$": "./transformers/es6-file-extension-trasformer.js"
+    }
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
