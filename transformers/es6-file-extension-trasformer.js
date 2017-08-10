@@ -3,8 +3,6 @@ const jestPreset = require('babel-preset-jest');
 
 module.exports = {
     process(src, filename) {
-        console.log(filename)
-
         if (babel.util.canCompile(filename)) {
             return babel.transform(src, {
                 filename,
