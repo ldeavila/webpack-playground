@@ -27,7 +27,7 @@ module.exports = {
     },
     devServer: {
         contentBase: path.resolve(__dirname, './src'),
-        headers: {"Access-Control-Allow-Origin": "*"}
+        headers: {'Access-Control-Allow-Origin': '*'}
     }
 };
 
