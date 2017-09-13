@@ -1,4 +1,4 @@
-import {toGrammaticalNumber} from "./grammatical-number-service";
+import {toGrammaticalNumber} from "./grammatical-number-service.js";
 
 describe('grammatical-number-service', () => {
 
